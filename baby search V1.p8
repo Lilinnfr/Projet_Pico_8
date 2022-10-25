@@ -2,18 +2,6 @@ pico-8 cartridge // http://www.pico-8.com
 version 29
 __lua__
 -- main functions
-function create_player()
-	p={
-		x=6,
-		y=3,
-		sprite=1,
-		keys=0
-		}
-end
-
-function draw_player()
-	spr(p.sprite, p.x*8, p.y*8, 1, 1, p.flip)
-end
 
 function _init()
  create_player()
@@ -25,30 +13,72 @@ function _update()
 end
 
 function _draw()
-	cls()
-	map(0,0,0,0)
+ map_level_1()
 	draw_player()
 	draw_ui()
 	--draw_time()
 end
 -->8
 -- functions
+
+--fonctions qui creent la map
+function map_level_1()
+	cls()
+	map(0,0,0,0)
+end
+
+--fonctions qui crent le joueur
+--et l'affichent
+
+function create_player()
+	p={
+		x=6,
+		y=3,
+		sprite=1,
+		keys=0
+		}
+end
+
+	--fonction qui fait
+	--regarder droite/gauche
+function draw_player()
+	spr(p.sprite, p.x*8, p.y*8, 1, 1, p.flip)
+end
+
+	--la camera suit les changements
+	--de map
+function update_camera()
+	local camx=flr(p.x/16)*16
+	local camy=flr(p.y/16)*16
+	camera(camx*8,camy*8)
+end
+
+
+--fonction qui permet le deplacement
 function player_movement()
 	newx=p.x
 	newy=p.y
 	
+	--mouvements
+	--flip = retournement du sprite
 	if (btnp(⬅️)) newx-=1 p.flip=true
 	if (btnp(➡️)) newx+=1 p.flip=false
 	if (btnp(⬆️)) newy-=1
 	if (btnp(⬇️)) newy+=1
 	
+	--gestion des collisions
 	if not check_flag(0,newx,newy) then
 	p.x=newx
 	p.y=newy
 	end
+	--si flag 0 pas de deplacement
 	
+	--player mvt appelle la 
+	--fonction interact pour
+	--recupere la cle
 	interact(newx, newy)
 	
+	--interdiction sortie de la map
 	if not check_flag(0,newx, newy) then
 		p.x=mid(0,newx,127)
 		p.y=mid(0,newy,63)
@@ -57,33 +87,43 @@ function player_movement()
 	end
 end
 
+
+
+--recuperation des objets
+
+	--verifie un flag
+function check_flag(flag,x,y)
+	local sprite=mget(x,y)
+	return fget(sprite,flag)
+end
+
+ --verifie si la tile a 
+ --le flag 1
 function interact(x,y)
 	if check_flag(1,x,y) then
 		pick_up_key(x,y)
 	end
 end
 
-function check_flag(flag,x,y)
-	local sprite=mget(x,y)
-	return fget(sprite,flag)
-end
-
-function update_camera()
-	local camx=flr(p.x/16)*16
-	local camy=flr(p.y/16)*16
-	camera(camx*8,camy*8)
-end
-
-function next_tile(x,y)
-	local sprite=mget(x,y)
-	mset(x,y,sprite+1)
-end
-
+--recupere la cle et keys +1
 function pick_up_key(x,y)
 	next_tile(x,y)
 	p.keys+=1
 	sfx(1)
 end
+
+--remplace la tuile objet
+--par une tuile vide
+function next_tile(x,y)
+	local sprite=mget(x,y)
+	mset(x,y,sprite+1)
+end
+
+
+
+
+
+
 -->8
 -- user interface
 function draw_ui()
@@ -96,6 +136,7 @@ end
 -- print(flr(time(),10,10))
 --end
 -->8
+--gestion timer
 limit = 5
 
 function _loose()

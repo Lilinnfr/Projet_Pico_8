@@ -2,22 +2,93 @@ pico-8 cartridge // http://www.pico-8.com
 version 29
 __lua__
 function _init()
-x=60
-y=60
+	scene="intro"
+	create_player()
+	countdown=300
 end
 
 function _update()
- if (btn(⬅️)) x-=1
- if (btn(➡️)) x+=1
- if (btn(⬆️)) y-=1
- if (btn(⬇️)) y+=1
+	if scene=="intro" then
+		update_intro()
+	elseif scene=="lvl1" then
+		update_lvl1()
  end
+end
  
- function _draw()
+function _draw()
+	if scene=="intro" then
+		draw_intro()
+	elseif scene=="lvl1" then
+		draw_lvl1()
+	end
+end
+-->8
+-- intro
+
+function draw_intro()
+	cls()
+	print("press enter to start",30,63)
+end
+
+function update_intro()
+	if btnp(🅾️) then
+	scene="lvl1"
+	end
+end
+-->8
+-- lvl1
+
+function draw_lvl1()
+	map_lvl1()
+	draw_player()
+end
+
+function update_lvl1()
+	player_movement()
+	decreasetime()
+end
+
+function map_lvl1()
  cls()
  map(0,0,0,0,128,64)
- spr(6,x,y)
- end
+ print(countdown)
+end
+
+function create_player()
+	p={
+		x=5,
+		y=5,
+		sprite=6,
+		keys=0,
+		speed=1
+		}
+end
+
+function draw_player()
+	spr(p.sprite, p.x, p.y)
+end
+
+
+function player_movement()
+ if (btnp(⬅️)) then p.x-=1
+ elseif (btnp(➡️)) then p.x+=1
+ elseif (btnp(⬆️)) then p.y-=1
+ elseif (btnp(⬇️)) then p.y+=1
+	end
+end
+ 
+
+
+
+
+-->8
+--countdown
+
+function decreasetime()
+ countdown-=1
+end
+
+
 __gfx__
 00000000000000003331333333313333333433333333b33333333333b333333333bbbb3333337333333333333333ccdc37cdc7333333333333b3333333344433
 0000000000000000331213333318133333414333333b4b33343433333333bb333bbaabb33337a7333b3333333b3cc76ccccc6c3b3b333b33333333b333344433

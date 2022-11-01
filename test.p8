@@ -2,7 +2,7 @@ pico-8 cartridge // http://www.pico-8.com
 version 29
 __lua__
 function _init()
-	scene="intro"
+	scene="lvl1"
 	create_player()
 	countdown=300
 end
@@ -56,9 +56,13 @@ end
 
 function create_player()
 	p={
-		x=5,
-		y=5,
 		sprite=6,
+		x=5,	y=5,
+		w=8, h=8,
+		dx=0, dy=0,
+		max_speed=3,
+		acceleration=1,
+		friction=0.85
 		keys=0,
 		speed=1
 		}
@@ -70,11 +74,39 @@ end
 
 
 function player_movement()
- if (btnp(⬅️)) then p.x-=1
- elseif (btnp(➡️)) then p.x+=1
- elseif (btnp(⬆️)) then p.y-=1
- elseif (btnp(⬇️)) then p.y+=1
+ if (btnp(⬅️)) then p.dx-=p.acceleration
+ if (btnp(➡️)) then p.x+=p.acceleration
+ if (btnp(⬆️)) then p.y-=p.acceleration
+ if (btnp(⬇️)) then p.y+=p.acceleration
 	end
+	if abs(p.dx) > p.max_speed/2 ans abs(p.dy) > p.max_speed/2 then
+		p.dx+=0.75
+		p.dy+=0.75
+	end
+	p.dx=mid(-p.max_speed, p.dx, p.max_speed)
+	p.dy=mid(-p.max_speed, p.dy, p.max_speed)
+	check_walls(p)
+	end
+	if can_move(p, p.dx, p.dy) then
+		p.x+=p.dx
+		p.y+=p.dy
+	else
+		local target_x=p.dx
+		local target_y=p.dy
+		while not can_move(p, target_x, target_y) do
+			if abs(target_x) <= 0.1 then
+				target_x=0
+			else
+				target_x +=0.9
+			end
+			if abs(target_y) <= 0.1 then
+				target_y=0
+			else
+				target_y +=0.9
+			end
+		end
+		p.x += target_x
+		p.y += target_y
 end
  
 

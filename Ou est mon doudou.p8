@@ -58,7 +58,7 @@ function draw_intro()
 	map(96,0,0,0)
 	print("ouiiiin ! \n j'ai perdu \n mon doudou...",60,20,0)
 	print("aide-moi a le retrouver !",20,53,0)
-	print("tu as 4 minutes \n pour finir le jeu",10,73,2)
+	print("tu as 3 minutes \n pour finir le jeu",10,73,2)
 	print("press ❎ to start",10,100,1)
 end
 
@@ -333,7 +333,7 @@ end
 --fin de niveau
 --game over par fin du chrono
 function lose()
- if(time() - test) > 240  then
+ if(time() - test) > 180  then
  draw_gameover()
  sfx(8)
  	if (btn(❎)) then

@@ -21,17 +21,17 @@ Dans le premier niveau, vous devez vous frayer un chemin dans la ville pour trou
 Dans ce second niveau, vous découvrez qu'un autre enfant a pris votre doudou, qu'il l'a caché, et vous demande de lui rapporter 12 biberons en échange d'une seconde clé pour avancer. Cette fois-ci c'est la forêt qui vous entoure...  
 Bonus : n'oubliez pas de récupérer votre poussette!
 
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_006.png" alt="capture d'écran" width="190"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_008.png" alt="capture d'écran" width="190"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_010.png" alt="capture d'écran" width="190">
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_011.png" alt="capture d'écran" width="190">
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_012.png" alt="capture d'écran" width="190">  
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_006.png" alt="capture d'écran" width="160"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_008.png" alt="capture d'écran" width="160"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_010.png" alt="capture d'écran" width="160">
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_011.png" alt="capture d'écran" width="160">
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_012.png" alt="capture d'écran" width="160">  
 
 Dans le dernier niveau, vous apercevez une troisième clé à coté d'un coffre de l'autre côté de la rivière, inaccessible pour le moment...  
 Vous allez devoir trouver les 2 morceaux de pont qui vont vous permettre de passer.  
 Bonus : vous pouvez encore essayer de récupérer votre précieux véhicule pour gagner en rapidité!    
 
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_013.png" alt="capture d'écran" width="190"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_014.png" alt="capture d'écran" width="190"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_015.png" alt="capture d'écran" width="190">
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_016.png" alt="capture d'écran" width="190">
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_018.png" alt="capture d'écran" width="190">    
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_013.png" alt="capture d'écran" width="160"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_014.png" alt="capture d'écran" width="160"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_015.png" alt="capture d'écran" width="160">
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_016.png" alt="capture d'écran" width="160">
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_018.png" alt="capture d'écran" width="160">    
 
 Vous avez réussi à passer cette satanée rivière et avez pu ouvrir le coffre?  
 Bravo! Vous êtes parvenus à retrouver votre doudou!  

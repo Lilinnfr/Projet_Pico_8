@@ -14,9 +14,9 @@ Le jeu possède 3 niveaux labyrinthiques différents et vous avez 3 minutes pour
 
 Dans le premier niveau, vous devez vous frayer un chemin dans la ville pour trouver une première clé qui vous mènera à un second niveau.
 
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_000.png" alt="capture d'écran" width="180"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_001.png" alt="capture d'écran" width="180"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_002.png" alt="capture d'écran" width="180">
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_003.png" alt="capture d'écran" width="180">
-<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_004.png" alt="capture d'écran" width="180">  
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_000.png" alt="capture d'écran" width="170"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_001.png" alt="capture d'écran" width="170"> <img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_002.png" alt="capture d'écran" width="170">
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_003.png" alt="capture d'écran" width="170">
+<img src="https://github.com/Lilinnfr/Images/blob/32d32d7de5547b5732d15fad3cb1fdc8987b23a6/wheresmyteddy_004.png" alt="capture d'écran" width="170">  
 
 Dans ce second niveau, vous découvrez qu'un autre enfant a pris votre doudou, qu'il l'a caché, et vous demande de lui rapporter 12 biberons en échange d'une seconde clé pour avancer. Cette fois-ci c'est la forêt qui vous entoure...  
 Bonus : n'oubliez pas de récupérer votre poussette!
